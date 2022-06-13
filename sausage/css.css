@@ -1,0 +1,40 @@
+:root {
+  --bun-brown: #edcf8e;
+  --sausage-red: #db2c00;
+}
+
+.container {
+  top: 100px;
+  left: 200px;
+  position: relative;
+  display: inline-flex;
+}
+
+.sausage {
+  z-index: 1;
+  height: 260px;
+  width: 50px;
+  background: linear-gradient(
+    to right,
+    var(--sausage-red) 0%,
+    var(--sausage-red) 50%,
+    #bf300b 50%,
+    #bf300b 100%
+  );
+  border-radius: 30px;
+}
+
+.roll {
+  z-index: 0;
+  position: relative;
+  top: 30px;
+  left: 10px;
+  height: 200px;
+  width: 50px;
+  background-color: var(--bun-brown);
+  border-radius: 30px;
+}
+.roll--twin {
+  left: -10px;
+  background-color: #d3b87c;
+}
