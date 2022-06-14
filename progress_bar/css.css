@@ -1,0 +1,35 @@
+:root {
+  --width-percentage: 50%;
+}
+
+.container {
+  z-index: 0;
+  position: relative;
+  height: 5rem;
+  width: 40rem;
+  background-color: #7370c0;
+}
+.bar--body {
+  margin: 1rem;
+  z-index: 1;
+  position: absolute;
+  height: 3rem;
+  width: 38rem;
+  border-radius: 30px;
+  background-color: #42406c;
+  box-shadow: 1px -1px 3px 0.1px black;
+}
+.loading--bar {
+  margin: 3px;
+  position: relative;
+  z-index: 2;
+  height: 2.55rem;
+  width: calc(var(--width-percentage) * 0.991);
+  border-radius: 30px;
+  background-image: repeating-linear-gradient(
+    -45deg,
+    rgb(249, 231, 55) 0 5px,
+    #ffe03e 5px 10px
+  );
+  transition: width 2s ease-in-out;
+}
