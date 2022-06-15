@@ -27,7 +27,7 @@
   width: 20rem;
 }
 .greens {
-  z-index: 2;
+  z-index: 1;
   top: 180px;
   position: absolute;
   background-color: var(--lettuce-green);
@@ -36,7 +36,7 @@
 }
 .cheese {
   top: 120px;
-  z-index: 3;
+  z-index: 2;
   position: absolute;
   background-color: var(--cheese-yellow);
   height: 1rem;
@@ -45,14 +45,13 @@
 .cheese::after {
   content: '';
   position: absolute;
-  z-index: 3;
+  z-index: 2;
   top: 16px;
   left: 30px;
   width: 0px;
   height: 0;
   border-left: 130px solid transparent;
   border-right: 130px solid transparent;
-
   border-top: 35px solid var(--cheese-yellow);
 }
 .patty {
