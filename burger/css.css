@@ -6,38 +6,33 @@
   --lettuce-green: #88eb2d;
 }
 .container {
+  width: 20rem;
+  height: 20rem;
   position: relative;
 }
 
 .bun {
-  z-index: 0;
-  position: absolute;
-  height: 17rem;
-  width: 20rem;
+  height: 5rem;
+  width: 100%;
   background-color: var(--bun-brown);
-  border-radius: 80px 80px 50px 50px;
+  border-radius: 5rem 5rem 0 0;
+}
+.bun:last-of-type {
+  transform: rotate(180deg);
+  height: 3rem;
 }
 
 .tomato {
-  z-index: 1;
-  top: 100px;
-  position: absolute;
   background-color: var(--tomato-red);
   height: 1.5rem;
   width: 20rem;
 }
 .greens {
-  z-index: 1;
-  top: 180px;
-  position: absolute;
   background-color: var(--lettuce-green);
   height: 1.5rem;
   width: 20rem;
 }
 .cheese {
-  top: 120px;
-  z-index: 2;
-  position: absolute;
   background-color: var(--cheese-yellow);
   height: 1rem;
   width: 20rem;
@@ -45,19 +40,13 @@
 .cheese::after {
   content: '';
   position: absolute;
-  z-index: 2;
-  top: 16px;
-  left: 30px;
-  width: 0px;
-  height: 0;
-  border-left: 130px solid transparent;
-  border-right: 130px solid transparent;
-  border-top: 35px solid var(--cheese-yellow);
+  top: 7.5rem;
+  left: 1.875rem;
+  border-left: 8.125rem solid transparent;
+  border-right: 8.125rem solid transparent;
+  border-top: 2.1875rem solid var(--cheese-yellow);
 }
 .patty {
-  z-index: 1;
-  top: 133px;
-  position: absolute;
   background-color: var(--burger-brown);
   height: 3rem;
   width: 20rem;

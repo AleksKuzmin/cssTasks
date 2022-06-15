@@ -20,30 +20,38 @@ body {
   grid-template-columns: 310px;
   grid-template-rows: 120px 80px 440px 50px;
   margin-top: 50px;
+  overflow: hidden;
 }
 
 header {
   display: flex;
   align-items: center;
   justify-content: center;
+  font-weight: bold;
   background-color: #8dd24c;
 }
-menu {
+nav {
   display: flex;
-  justify-content: flex-start;
   align-items: center;
+  justify-content: flex-start;
   font-size: 20px;
-  list-style-type: none;
-  background-color: #da0463;
   overflow: auto;
   white-space: nowrap;
   padding-inline: 22px;
+  background-color: #da0463;
 }
-menu > span {
-  padding-inline: 22px;
+
+li {
+  display: inline;
+  list-style-type: none;
+}
+
+ul > span {
+  padding-inline: 16px;
 }
 main {
-  font-size: 10px;
+  font-size: 12px;
+  font-weight: bold;
   padding: 20px;
   background-color: #2c9cec;
 }
@@ -66,8 +74,8 @@ footer {
     font-size: 30px;
     padding: 40px;
   }
-  menu {
-    display: flex;
+  nav {
+    display: inline-block;
     flex-direction: row;
     flex-wrap: wrap;
     grid-area: menu;
@@ -75,6 +83,9 @@ footer {
     justify-content: flex-start;
     font-size: 27px;
     font-weight: bold;
+  }
+  li {
+    display: block;
   }
   main {
     font-size: 14px;
