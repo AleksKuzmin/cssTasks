@@ -4,16 +4,16 @@
 }
 
 .container {
-  top: 100px;
-  left: 200px;
+  top: 6.25rem;
+  left: 12.5rem;
   position: relative;
   display: inline-flex;
 }
 
 .sausage {
   z-index: 1;
-  height: 260px;
-  width: 50px;
+  height: 16.25rem;
+  width: 3.125rem;
   background: linear-gradient(
     to right,
     var(--sausage-red) 0%,
@@ -21,20 +21,19 @@
     #bf300b 50%,
     #bf300b 100%
   );
-  border-radius: 30px;
+  border-radius: 1.875rem;
 }
 
 .roll {
-  z-index: 0;
   position: relative;
-  top: 30px;
-  left: 10px;
-  height: 200px;
-  width: 50px;
+  top: 1.875rem;
+  left: 0.625rem;
+  height: 12.5rem;
+  width: 3.125rem;
   background-color: var(--bun-brown);
-  border-radius: 30px;
+  border-radius: 1.875rem;
 }
-.roll--twin {
-  left: -10px;
-  background-color: #d3b87c;
+.roll:last-of-type {
+  filter: brightness(80%);
+  left: -0.625rem;
 }

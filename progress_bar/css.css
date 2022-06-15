@@ -3,7 +3,6 @@
 }
 
 .container {
-  z-index: 0;
   position: relative;
   height: 5rem;
   width: 40rem;
@@ -15,21 +14,21 @@
   position: absolute;
   height: 3rem;
   width: 38rem;
-  border-radius: 30px;
+  border-radius: 1.875rem;
   background-color: #42406c;
-  box-shadow: 1px -1px 3px 0.1px black;
+  box-shadow: 0.0625rem -0.0625rem 0.1875rem 0.0063rem black;
 }
 .loading--bar {
   position: relative;
-  top: 2.5px;
+  top: 0.1563rem;
   z-index: 2;
 
   height: 2.55rem;
-  border-radius: 30px;
+  border-radius: 1.875rem;
   background-image: repeating-linear-gradient(
     -45deg,
-    rgb(249, 231, 55) 0 5px,
-    #ffe03e 5px 10px
+    rgb(249, 231, 55) 0 0.3125rem,
+    #ffe03e 0.3125rem 0.625rem
   );
   animation: load 1.5s ease-in-out 2s;
   animation-fill-mode: forwards;
